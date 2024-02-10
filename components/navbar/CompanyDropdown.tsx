@@ -8,7 +8,7 @@ const CompanyDropdown = () => {
       <div className="flex flex-col gap-8 lg:gap-4 py-10 lg:py-2">
         {COMPANY.map((item) => (
           <Link href={item.link} key={item.subtitle}>
-            <div className="flex gap-2 lg:p-4 hover:bg-[#f7f2fe] rounded-lg cursor-pointer">
+            <div className="flex gap-2 lg:p-4 lg:hover:bg-[#f7f2fe] lg:rounded-lg cursor-pointer">
               <div
                 className={`${
                   item.icon_bg === "green" ? "bg-green-20" : "bg-purple-30"
