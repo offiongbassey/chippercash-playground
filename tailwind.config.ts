@@ -11,7 +11,11 @@ const config: Config = {
       colors: {
         purple:  {
           10: "#202654",
-          20: "#806ce8"
+          20: "#806ce8",
+          30: "#6945d8",
+        },
+        green: {
+          20: "#24ddb0"
         }
       },
       backgroundImage: {
@@ -19,6 +23,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      screens: {
+        "xs": "440px",
+        "3xl": "1680px",
+        "4xl": "220px"
+      }
     },
   },
   plugins: [],
