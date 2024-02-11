@@ -14,7 +14,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className=" bg-purple-10 px-5 z-30 fixed w-full">
+    <nav className=" bg-purple-10 z-30 fixed w-full">
       <div className="padding-container max-container flex items-center justify-between">
         <Link href="/">
           <Image src="/chipper-logo.png" alt="logo" width={122} height={12} />

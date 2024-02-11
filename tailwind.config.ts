@@ -13,15 +13,16 @@ const config: Config = {
           10: "#202654",
           20: "#806ce8",
           30: "#6945d8",
+          40: "#d4d6eb",
         },
         green: {
-          20: "#24ddb0"
+          20: "#24ddb0",
+          30: "#acfde4"
         }
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-bg": "url('/hero3d-bg.png')"
+       
       },
       screens: {
         "xs": "440px",
