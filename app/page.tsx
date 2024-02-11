@@ -1,8 +1,10 @@
-
+import Hero from "@/components/hero/Hero";
+import Hero3D from "@/components/hero/Hero3D";
 export default function Home() {
   return (
-  <div className="bg-white pb-[600px]">
-    
-  </div>
+  <>
+    <Hero />
+    <Hero3D/>
+  </>
   );
 }
