@@ -24,12 +24,14 @@ const config: Config = {
           10: "#f2f2fb"
         },
         black: {
-          10: "#1b0a2d"
+          10: "#1b0a2d",
+          20: "#000"
         }
       },
       backgroundImage: {
         "hero-bg": "url('/hero3d-bg.png')",
-        "mobile-ads": "url('/mobile-advert.png')"
+        "mobile-ads": "url('/mobile-advert.png')",
+        "review-bg": "url('/review-bg.svg')"
       },
       screens: {
         "xs": "440px",
