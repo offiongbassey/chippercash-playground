@@ -1,3 +1,4 @@
+import GetHelp from "@/components/home/get-help/GetHelp";
 import Hero from "@/components/home/hero/Hero";
 import Hero3D from "@/components/home/hero/Hero3D";
 import Review from "@/components/home/review/Review";
@@ -9,6 +10,7 @@ export default function Home() {
     <Hero3D/>
     <SendMoney/>
     <Review/>
+    <GetHelp/>
   </>
   );
 }
