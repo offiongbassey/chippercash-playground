@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ font-family: Poppins;
+}
+
+@layer utilities {
+  
+  .max-container {
+    @apply mx-auto max-w-[1440px]
+  }
+
+  .padding-container{
+    @apply px-10 lg:px-36;
+  }
+  .btn_transparent{
+    @apply px-5 py-3 text-white transition-all duration-1000 rounded-2xl hover:bg-[#9389f0] cursor-pointer border-[0.2px] hover:border-[#9389f0]  border-white text-[12px]
+  }
+  .btn_purple{
+    @apply px-5 py-3 bg-[#6945d8] text-white transition-all duration-1000 rounded-2xl hover:bg-[#9389f0] cursor-pointer text-[12px]
+  }
+
+}
