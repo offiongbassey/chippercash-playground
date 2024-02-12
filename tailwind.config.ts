@@ -31,7 +31,8 @@ const config: Config = {
       backgroundImage: {
         "hero-bg": "url('/hero3d-bg.png')",
         "mobile-ads": "url('/mobile-advert.png')",
-        "review-bg": "url('/review-bg.svg')"
+        "review-bg": "url('/review-bg.svg')",
+        "get-help": "url('/get-help.png')"
       },
       screens: {
         "xs": "440px",

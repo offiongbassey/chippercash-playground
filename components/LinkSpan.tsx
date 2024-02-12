@@ -14,10 +14,10 @@ const LinkSpan = ({ text, variant}: LinkSpanProps) => {
     <div
       onMouseOver={()=> setToggle(false)}
       onMouseOut={() => setToggle(true)}
-      className='flex gap-2 items-center justify-center'>
-      <div className="w-5"> 
+      className='flex gap-2'>
+      <div className="w-5 flex"> 
           {toggle ? 
-            <div className={`${variant === "green" ? "bg-green-20" : "bg-purple-30"} h-1 w-5 rounded-full hover:transition-all duration-300`}/> :
+            <div className={`${variant === "green" ? "bg-green-20" : "bg-purple-30"} mt-[10px] h-1 w-5 rounded-full hover:transition-all duration-300`}/> :
             <div className={`${variant === "green" ? "bg-green-20" : "bg-purple-30"} w-1 h-5 ml-3 rounded-full hover:transition-all duration-300`}/> 
           }
         </div> 
