@@ -1,4 +1,4 @@
-name:   Chipper Cash Playground
+name:   Chipper-Cash Playground
 
 env:
     VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
