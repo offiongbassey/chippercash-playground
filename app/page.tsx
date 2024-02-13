@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import GetHelp from "@/components/home/get-help/GetHelp";
 import Hero from "@/components/home/hero/Hero";
 import Hero3D from "@/components/home/hero/Hero3D";
@@ -13,6 +14,7 @@ export default function Home() {
     <Review/>
     <GetHelp/>
     <Investment/>
+    <Footer/>
   </>
   );
 }

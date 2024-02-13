@@ -7,7 +7,7 @@ import React from 'react'
 
 const Investment = () => {
   return (
-    <section className='bg-white padding-container max-container'>
+    <section className='bg-white padding-container max-container pb-64'>
             <div className='flex flex-col-reverse md:flex-row justify-start items-center py-10 gap-20'>
                 <CardContext
                     title="Invest in global stocks with $1"
