@@ -1,6 +1,8 @@
+import Footer from "@/components/footer/Footer";
 import GetHelp from "@/components/home/get-help/GetHelp";
 import Hero from "@/components/home/hero/Hero";
 import Hero3D from "@/components/home/hero/Hero3D";
+import Investment from "@/components/home/investment/Investment";
 import Review from "@/components/home/review/Review";
 import SendMoney from "@/components/home/sendMoney/SendMoney";
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
     <SendMoney/>
     <Review/>
     <GetHelp/>
+    <Investment/>
+    <Footer/>
   </>
   );
 }
