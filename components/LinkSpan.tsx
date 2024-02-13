@@ -21,7 +21,7 @@ const LinkSpan = ({ text, variant}: LinkSpanProps) => {
             <div className={`${variant === "green" ? "bg-green-20" : "bg-purple-30"} w-1 h-5 ml-3 rounded-full hover:transition-all duration-300`}/> 
           }
         </div> 
-        <span className={`font-[500] ${variant === "green" ? "text-green-20" : "text-purple-30"}`}> {text}</span>
+        <span className={`font-[500] text-sm ${variant === "green" ? "text-green-20" : "text-purple-30"}`}> {text}</span>
     </div>
   )
 }
