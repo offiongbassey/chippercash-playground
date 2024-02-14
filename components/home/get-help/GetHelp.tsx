@@ -75,10 +75,10 @@ const GetHelp = () => {
       </div>
 
       {/* Featured in Section */}
-      <div className="padding-container max-container bg-white flex flex-col lg:flex-row py-20 justify-between">
+      <div className="padding-container max-container bg-white flex flex-col md:flex-row py-10 md:py-20 justify-between">
         <div className="flex flex-col gap-6">
           <h1 className="text-3xl font-[600]">Featured In</h1>
-          <p className="text-purple-50 font-[400] lg:font-[200] text-lg lg:text-sm md:max-w-[450px]">
+          <p className="text-purple-50 font-[300] lg:font-[200] text-sm lg:text-sm md:max-w-[450px]">
             Chipper’s story is “chipping away” at hard problems and unlocking
             global opportunities.
           </p>
@@ -86,7 +86,7 @@ const GetHelp = () => {
             <LinkSpan text="Read more about our journey" variant="purple" />
           </Link>
         </div>
-        <div className="grid grid-cols-3 gap-20 pt-20 md:pt-0 items-center justify-center">
+        <div className="grid grid-cols-3 gap-10 md:gap-20 pt-10 md:pt-0 items-center justify-center">
           <div className="flex items-center justify-center">
             <Image
               src="/ft-bbc.svg"

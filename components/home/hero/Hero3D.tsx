@@ -15,11 +15,11 @@ type Hero3DItemsProps = {
 
 const Hero3DItems = ({ title, children, variant }: Hero3DItemsProps) => {
   return (
-    <div className="flex flex-col gap-8 items-center">
+    <div className="flex flex-col gap-4 md:gap-8 items-center">
       <div className="flex">
         <span className={`p-6 ${variant === "purple" ? "bg-purple-30" : variant === "blue" ? "bg-blue-500" : variant === "pink" ? "bg-pink-600" : "bg-green-20"} rounded-full`}>{children}</span>
       </div>
-      <p className="max-w-[100px] text-xl md:text-sm text-center">{title}</p>
+      <p className="max-w-[100px] text-xs md:text-sm text-center">{title}</p>
     </div>
   );
 };
@@ -27,8 +27,8 @@ const Hero3DItems = ({ title, children, variant }: Hero3DItemsProps) => {
 const Hero3D = () => {
   return (
     <div className="bg-purple-10">
-      <div className="flex flex-col items-center justify-center padding-container max-container py-20 text-white gap-5">
-        <h2 className="text-4xl font-[600] lg:max-w-[867px] leading-[140%] text-center">
+      <div className="flex flex-col items-center justify-center padding-container max-container py-10 md:py-20 text-white gap-5">
+        <h2 className="text-xl md:text-4xl font-[600] lg:max-w-[867px] leading-[140%] text-center">
           With Chipper ID, we are supercharging user verification on the
           continent.
         </h2>
@@ -40,7 +40,7 @@ const Hero3D = () => {
           <Image src="/hero3d.png" alt="3d" width={850} height={850} />
         </div>
 
-        <div className="grid grid-cols-3 lg:grid-cols-5 gap-14 lg:gap-32">
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-14 lg:gap-32">
           <Hero3DItems title="Competitive Pricing" variant="green">
             <CiMoneyBill
               color="white"
