@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       {/* App Store */}
       <div className="padding-container max-container">
-        <div className="border border-[#c1c4e5] bg-white text-center overflow-hidden rounded-3xl py-20 w-full relative -mb-40 px-10">
+        <div className="border border-[#c1c4e5] bg-white text-center overflow-hidden rounded-3xl py-10 md:py-20 w-full relative -mb-40 px-6 md:px-10">
           {/* Bg Dots */}
           <div className="w-4 h-4 rounded-md bg-orange-500 -mt-12 left-[500px] absolute" />
           <div className="w-4 h-4 rounded-md bg-green-30 -mt-6 left-16 absolute" />
@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="w-80  h-80 -ml-44 mt-20 lg:-ml-5 lg:-mb-40 rounded-full bg-purple-30 absolute" />
           {/* Top Bg Dots ends here */}
           <div className="flex flex-col items-center justify-center">
-            <h2 className="text-[30px] leading-[130%] font-[600] max-w-[650px] z-20">
+            <h2 className="text-2xl md:text-[30px] leading-[130%] font-[600] max-w-[650px] z-20">
               In an instant send support, feed a passion, or strengthen a bond
             </h2>
             <div className="flex flex-col md:flex-row items-start gap-4 justify-between mt-8 z-20">
@@ -63,7 +63,7 @@ const Footer = () => {
       </div>
 
       <footer className="bg-purple-10">
-        <div className="padding-container max-container text-purple-40 text-lg md:text-xs font-[200] pt-52">
+        <div className="padding-container max-container text-purple-40 text-xs font-[200] pt-52">
           {/* Footer Top */}
           <div className="flex justify-between flex-col gap-10 md:flex-row mb-10">
             <div>
@@ -85,11 +85,11 @@ const Footer = () => {
               <h3 className="text-xl text-white font-[600]">
                 How Can We help?
               </h3>
-              <div className="flex gap-4 pt-5 ">
+              <div className="flex flex-col md:flex-row gap-4 pt-5 ">
                 <Link href="/">
                   <LinkSpan text="Help Docs & FAQs" variant="green" />
                 </Link>
-                <span>|</span>
+                <span className="hidden md:flex">|</span>
                 <p>Support via In-app Chat</p>
               </div>
             </div>
