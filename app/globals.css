@@ -21,7 +21,7 @@ body {
   }
 
   .padding-container{
-    @apply px-10 lg:px-36;
+    @apply px-5 lg:px-36;
   }
   .btn_transparent{
     @apply px-5 py-3 text-white transition-all duration-1000 rounded-2xl hover:bg-[#9389f0] cursor-pointer border-[0.2px] hover:border-[#9389f0]  border-white text-[12px]

@@ -4,10 +4,10 @@ import Button from "../../Button";
 
 const hero = () => {
   return (
-    <section className="pt-20 bg-purple-10 text-purple-40">
+    <section className="pt-10 md:pt-20 bg-purple-10 text-purple-40">
       <div className="padding-container max-container flex justify-between gap-4 lg:gap-40">
-        <div className="flex-1 flex flex-col gap-5 pb-20 mt-20">
-          <h1 className="text-5xl lg:text-5xl font-[600] ">
+        <div className="flex-1 flex flex-col gap-5 pb-0 md:pb-20 mt-20">
+          <h1 className="text-4xl lg:text-5xl font-[600] ">
             Move Your <br />
             Money Freely
           </h1>
@@ -54,7 +54,7 @@ const hero = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-5 padding-container max-container py-20 justify-between items-start">
+      <div className="flex flex-col lg:flex-row gap-5 padding-container max-container py-10 lg:py-20 justify-between items-start">
         <div>
           <div className="bg-white p-[2px] w-8 rounded-full mb-1" />
           <p className="text-lg md:text-xs lg:text-sm">
@@ -82,8 +82,8 @@ type KeyFiguresProps = {
 const KeyFigures = ({ title, desc }: KeyFiguresProps) => {
   return (
     <div className="items-start lg:items-center justify-center flex flex-col">
-      <h2 className=" text-2xl whitespace-nowrap text-white ">{title}</h2>
-      <p className="text-xs">{desc}</p>
+      <h2 className="text-xl md:text-2xl whitespace-nowrap text-white ">{title}</h2>
+      <p className="text-xs font-[200]">{desc}</p>
     </div>
   );
 };
