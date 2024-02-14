@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,6 +8,7 @@ import { GoPeople } from "react-icons/go";
 import { PiUserCirclePlus } from "react-icons/pi";
 import { LuFiles } from "react-icons/lu";
 import LinkSpan from "../../LinkSpan";
+import { useMotionValue, useTransform, motion} from "framer-motion";
 
 type Hero3DItemsProps = {
   title: string;
@@ -25,6 +28,11 @@ const Hero3DItems = ({ title, children, variant }: Hero3DItemsProps) => {
 };
 
 const Hero3D = () => {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const rotateX = useTransform(y, [-100, 100], [30, -30]);
+  const rotateY = useTransform(x, [-100, 100], [-30, 30]);
+
   return (
     <div className="bg-purple-10">
       <div className="flex flex-col items-center justify-center padding-container max-container py-10 md:py-20 text-white gap-5">
@@ -36,9 +44,15 @@ const Hero3D = () => {
           <LinkSpan text="Discover Chipper ID" variant="green" />
         </Link>
 
-        <div className="bg-hero-bg bg-contain bg-no-repeat p-6 lg:p-12">
+        {/* 3D Chipper Id */}
+        <motion.div 
+        style={{ x, y, rotateX, rotateY, z: 100 }}
+        drag
+        dragElastic={0.18}
+        className="bg-hero-bg bg-contain bg-no-repeat p-6 lg:p-12">
           <Image src="/hero3d.png" alt="3d" width={850} height={850} />
-        </div>
+        </motion.div>
+        {/* 3D Chipper ID ends here */}
 
         <div className="grid grid-cols-3 md:grid-cols-5 gap-14 lg:gap-32">
           <Hero3DItems title="Competitive Pricing" variant="green">
