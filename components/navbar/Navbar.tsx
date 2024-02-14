@@ -7,6 +7,7 @@ import Button from "../Button";
 import ProductDropdown from "./ProductDropdown";
 import { useState } from "react";
 import CompanyDropdown from "./CompanyDropdown";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [navProductShow, setNavProductShow] = useState(false);
@@ -76,6 +77,7 @@ const Navbar = () => {
                 onClick={() => setToggle((prev) => !prev)}
               />
             )}
+           
           </div>
         </div>
       </div>
